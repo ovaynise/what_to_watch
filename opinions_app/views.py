@@ -20,7 +20,7 @@ def index_view():
     opinion = random_opinion()
     if opinion is None:
         abort(500)
-    return render_template('opinion.html', opinion=opinion
+    return render_template('opinion.html', opinion=opinion)
 
 
 @app.route('/add', methods=['GET', 'POST'])
